@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VideoCraft — Video Editor for Android</title>
+<meta name="description" content="VideoCraft is a video editor for Android. Trim, add filters, transitions, text and templates — all processed on your device.">
+<!--
+  Landing page. Deliberately minimal: its jobs are (1) give the privacy policy
+  a sensible parent so the root URL isn't a 404, (2) provide a Website value for
+  the Play store listing, and (3) give users a support address to reach.
+  Self-contained — no external fonts, scripts or stylesheets.
+-->
+<style>
+  :root{
+    --bg:#ffffff; --surface:#f7f7f9; --text:#1a1a1f; --muted:#5c5c66;
+    --line:#e4e4e9; --accent:#c9227e;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f0f12; --surface:#17171c; --text:#eeeef2; --muted:#9a9aa3;
+      --line:#2a2a31; --accent:#f07bb8;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px; line-height:1.65; -webkit-text-size-adjust:100%;
+  }
+  .bar{height:4px;background:linear-gradient(90deg,#ff3d9a,#29c5ff)}
+  main{max-width:44rem;margin:0 auto;padding:3.5rem 1.25rem 4rem}
+  .wordmark{font-size:2.1rem;font-weight:800;letter-spacing:-.03em;margin:0 0 .25rem}
+  .wordmark span{
+    background:linear-gradient(90deg,#ff3d9a,#29c5ff);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .tag{color:var(--muted);margin:0 0 2.5rem;font-size:1.05rem}
+  h2{font-size:1.1rem;margin:2.5rem 0 .6rem;letter-spacing:-.01em}
+  ul{padding-left:1.25rem}
+  li{margin:.35rem 0}
+  a{color:var(--accent)}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:1rem 1.15rem;margin:1.25rem 0;
+  }
+  .card p{margin:0}
+  footer{color:var(--muted);font-size:.85rem;margin-top:3.5rem;
+    border-top:1px solid var(--line);padding-top:1.25rem}
+  @media (max-width:480px){ main{padding:2.5rem 1rem 3rem} .wordmark{font-size:1.7rem} }
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<main>
+
+  <h1 class="wordmark">Video<span>Craft</span></h1>
+  <p class="tag">A video editor for Android.</p>
+
+  <p>VideoCraft lets you cut and arrange clips, add filters, transitions, text,
+  stickers, music and templates, then export in the quality you need — with
+  everything processed on your own phone.</p>
+
+  <h2>Built around one idea: your media stays yours</h2>
+  <ul>
+    <li>Editing and export run <strong>entirely on your device</strong>.</li>
+    <li>Your photos and videos are <strong>never uploaded</strong> to us.</li>
+    <li>No account, no sign-up.</li>
+  </ul>
+
+  <h2>Support</h2>
+  <div class="card">
+    <p>Questions, bugs or feedback:
+    <a href="mailto:videocrafteditor@gmail.com">videocrafteditor@gmail.com</a></p>
+  </div>
+
+  <h2>Legal</h2>
+  <ul>
+    <li><a href="privacy/">Privacy Policy</a></li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2026 VideoCraft</p>
+  </footer>
+
+</main>
+</body>
+</html>
